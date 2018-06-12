@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+body {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: mediumslateblue;
+}
+
+.tictac__board {
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    background: green;
+    color: white;
+    border: 15px solid rosybrown;
+    border-radius: 4px;
+    box-shadow: 3px 2px 2px black;
+}
+
+.tictac__title {
+    text-align: center;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tictac__game {
+    height: 400px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.tictac__control, .tictac__finish {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.7);
+    /* display: none; */
+}
+
+.tictac__finish {
+    display: none;
+}
+
+button {
+    -webkit-appearance: none;
+    box-shadow: none;
+    font-size: 24px;
+    border: none;
+    padding: 10px 20px;
+    margin: 20px 0;
+    background: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tictac__playfield {
+    height: 360px;
+    width: 360px;
+}
+
+.tictac__playfield ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tictac__playfield ul li {
+    width: 120px;
+    height: 120px;
+    border: 1px solid;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	cursor: pointer;
+}
+
+.tictac__playfield ul li:nth-child(1),
+.tictac__playfield ul li:nth-child(2),
+.tictac__playfield ul li:nth-child(3) {
+    border-top: none;
+}
+
+.tictac__playfield ul li:nth-child(1) {
+    border-left: none;
+}
+
+.tictac__playfield ul li:nth-child(3) {
+    border-right: none;
+}
+
+.tictac__playfield ul li:nth-child(4) {
+    border-left: none;
+}
+
+.tictac__playfield ul li:nth-child(6) {
+    border-right: none;
+}
+
+.tictac__playfield ul li:nth-child(7),
+.tictac__playfield ul li:nth-child(8),
+.tictac__playfield ul li:nth-child(9) {
+    border-bottom: none;
+}
+
+.tictac__playfield ul li:nth-child(7) {
+    border-left: none;
+}
+
+.tictac__playfield ul li:nth-child(9) {
+    border-right: none;
+}
+.tictac__playfield ul li {
+    width: 120px;
+    height: 120px;
+    border: 1px solid;
+}
